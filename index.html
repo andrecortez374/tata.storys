@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f5efe9">
+  <meta name="description" content="Tata Storys — uma experiência editorial para conhecer cintas, entender preferências e conversar sobre a melhor opção para você.">
+  <meta property="og:title" content="Tata Storys | Cintas e experiência de escolha">
+  <meta property="og:description" content="Explore o universo Tata Storys, descubra opções e leve suas preferências para uma conversa no WhatsApp.">
+  <meta property="og:type" content="website">
+  <title>Tata Storys | Cintas e experiência de escolha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header" id="siteHeader">
+    <a class="brand" href="#inicio" aria-label="Tata Storys — início">
+      <span class="brand__word">TATA</span>
+      <span class="brand__line" aria-hidden="true"></span>
+      <span class="brand__word brand__word--light">STORYS</span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+      <span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+      <a href="#descobrir">Descobrir</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#quiz">Encontrar uma opção</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#decidir">Conversar</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="hero__type hero__type--top" aria-hidden="true">TATA</div>
+      <div class="hero__type hero__type--bottom" aria-hidden="true">STORYS</div>
+
+      <div class="contour-stage" aria-hidden="true">
+        <svg class="contour-svg" viewBox="0 0 720 980" role="presentation">
+          <path id="heroContour" d="M476 80C358 128 306 232 326 344c17 96 109 127 125 225 17 102-41 166-134 211-69 33-103 76-109 142"/>
+        </svg>
+        <div class="editorial-frame">
+          <div class="editorial-frame__grain"></div>
+          <span>EDITORIAL / PRODUCT EXPERIENCE</span>
+          <strong>FORMA<br>EM<br>MOVIMENTO</strong>
+          <small>Imagem oficial da Tata Storys pode ocupar este enquadramento.</small>
+        </div>
+      </div>
+
+      <div class="hero__content">
+        <p class="kicker">TATA STORYS / CINTAS / ESCOLHA</p>
+        <h1 id="heroTitle">Não é sobre escolher qualquer peça.<br><em>É sobre encontrar a sua.</em></h1>
+        <p class="hero__lead">Conheça o universo Tata Storys, explore as opções disponíveis e leve suas preferências para uma conversa mais clara antes da compra.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#catalogo">Explorar cintas <span>↘</span></a>
+          <a class="btn btn--text" href="#quiz">Encontrar uma opção</a>
+        </div>
+      </div>
+
+      <div class="hero__meta" aria-hidden="true">
+        <span>01 / DESCOBRIR</span>
+        <span>02 / IDENTIFICAR</span>
+        <span>03 / ESCOLHER</span>
+      </div>
+    </section>
+
+    <section class="manifesto" id="descobrir" aria-labelledby="manifestoTitle">
+      <div class="manifesto__rail" aria-hidden="true">
+        <span>ESCOLHA</span><i></i><span>PRESENÇA</span><i></i><span>FORMA</span><i></i><span>CURADORIA</span>
+      </div>
+      <div class="manifesto__layout">
+        <div class="section-index">01</div>
+        <div>
+          <p class="kicker">ENTRAR NO UNIVERSO TATA</p>
+          <h2 id="manifestoTitle">Uma experiência pensada para <span>ver, entender e decidir.</span></h2>
+        </div>
+        <div class="manifesto__copy">
+          <p>O site organiza descoberta, comparação e intenção de compra sem transformar a experiência em uma prateleira infinita de cards.</p>
+          <p>Quando os produtos reais forem cadastrados, cada peça passa a ocupar esta narrativa de forma editorial e clara.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalogo" aria-labelledby="catalogTitle">
+      <div class="catalog__sticky">
+        <div class="catalog__intro">
+          <span class="section-index">02</span>
+          <p class="kicker">CATÁLOGO / CURADORIA</p>
+          <h2 id="catalogTitle">Explore por <span>presença</span>, não por excesso.</h2>
+          <p>Os dados reais de modelos, preços, tamanhos, cores, materiais e estoque ainda não foram informados. A estrutura abaixo já está preparada para receber o catálogo oficial.</p>
+          <div id="catalogFilters" class="catalog-filters" aria-label="Filtros do catálogo"></div>
+        </div>
+
+        <div class="catalog__viewer" id="catalogViewer">
+          <div class="product-stage" id="productStage">
+            <div class="product-stage__silhouette" aria-hidden="true">
+              <svg viewBox="0 0 420 620"><path d="M210 44c-52 0-78 41-81 92-4 73 34 99 33 168-1 72-50 105-47 186 2 53 35 88 95 88s93-35 95-88c3-81-46-114-47-186-1-69 37-95 33-168-3-51-29-92-81-92z"/></svg>
+            </div>
+            <div class="product-stage__content" id="productStageContent">
+              <span>CATÁLOGO AINDA NÃO CADASTRADO</span>
+              <h3>Pronto para receber os produtos reais da Tata Storys.</h3>
+              <p>Ao adicionar produtos no arquivo <code>script.js</code>, esta área passa a permitir navegação, seleção, favoritos e mensagens contextualizadas.</p>
+              <a class="btn btn--outline" href="#quiz">Prefiro dizer o que procuro</a>
+            </div>
+          </div>
+          <div class="catalog__thumbs" id="catalogThumbs" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choice-flow" id="quiz" aria-labelledby="quizTitle">
+      <div class="choice-flow__line" aria-hidden="true"></div>
+      <div class="choice-flow__head">
+        <span class="section-index">03</span>
+        <p class="kicker">QUIZ / INTENÇÃO DE COMPRA</p>
+        <h2 id="quizTitle">Conte o que você procura.<br><span>A conversa já começa melhor.</span></h2>
+        <p>Este quiz não promete encontrar “a cinta perfeita” nem faz recomendação médica. Ele apenas organiza suas preferências para o atendimento.</p>
+      </div>
+
+      <form class="quiz" id="choiceQuiz">
+        <div class="quiz__progress" aria-hidden="true"><span id="quizProgress"></span></div>
+        <div class="quiz__step-meta"><span id="quizStepLabel">ETAPA 1 DE 4</span><strong id="quizPercent">25%</strong></div>
+
+        <fieldset class="quiz__step is-active" data-step="0">
+          <legend>Que tipo de peça você está procurando?</legend>
+          <div class="quiz__options">
+            <label><input type="radio" name="pieceType" value="Cinta"><span>Cinta</span></label>
+            <label><input type="radio" name="pieceType" value="Ainda não sei"><span>Ainda não sei</span></label>
+            <label><input type="radio" name="pieceType" value="Quero explicar"><span>Quero explicar</span></label>
+          </div>
+          <label class="quiz__free"><span>Outro / quero responder com minhas palavras</span><textarea name="pieceTypeCustom" rows="3" placeholder="Escreva do seu jeito."></textarea></label>
+        </fieldset>
+
+        <fieldset class="quiz__step" data-step="1" hidden>
+          <legend>Em que contexto você pretende usar a peça?</legend>
+          <div class="quiz__options">
+            <label><input type="checkbox" name="useContext" value="Dia a dia"><span>Dia a dia</span></label>
+            <label><input type="checkbox" name="useContext" value="Ocasião específica"><span>Ocasião específica</span></label>
+            <label><input type="checkbox" name="useContext" value="Produção / look"><span>Produção / look</span></label>
+            <label><input type="checkbox" name="useContext" value="Ainda não sei"><span>Ainda não sei</span></label>
+          </div>
+          <label class="quiz__free"><span>Outro / quero responder com minhas palavras</span><textarea name="useContextCustom" rows="3" placeholder="Conte mais sobre onde pretende usar."></textarea></label>
+        </fieldset>
+
+        <fieldset class="quiz__step" data-step="2" hidden>
+          <legend>O que mais importa para você na escolha?</legend>
+          <div class="quiz__options">
+            <label><input type="checkbox" name="priority" value="Cobertura"><span>Cobertura</span></label>
+            <label><input type="checkbox" name="priority" value="Discrição sob a roupa"><span>Discrição sob a roupa</span></label>
+            <label><input type="checkbox" name="priority" value="Estilo"><span>Estilo</span></label>
+            <label><input type="checkbox" name="priority" value="Facilidade de uso"><span>Facilidade de uso</span></label>
+          </div>
+          <label class="quiz__free"><span>Outro / quero responder com minhas palavras</span><textarea name="priorityCustom" rows="3" placeholder="O que é prioridade para você?"></textarea></label>
+        </fieldset>
+
+        <fieldset class="quiz__step" data-step="3" hidden>
+          <legend>Quer acrescentar algum detalhe antes de conversar?</legend>
+          <label class="quiz__free quiz__free--large"><textarea name="notes" rows="6" placeholder="Escreva qualquer detalhe que possa ajudar no atendimento."></textarea></label>
+          <p class="quiz__notice">As respostas servem apenas para organizar sua intenção de compra. Nenhuma recomendação médica ou técnica é gerada automaticamente.</p>
+        </fieldset>
+
+        <div class="quiz__actions">
+          <button class="btn btn--text" id="quizBack" type="button" disabled>← Voltar</button>
+          <button class="btn btn--primary" id="quizNext" type="button">Continuar →</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="comparison" id="antes-depois" aria-labelledby="comparisonTitle">
+      <div class="comparison__copy">
+        <span class="section-index">04</span>
+        <p class="kicker">ANTES / DEPOIS / ESTRUTURA PREPARADA</p>
+        <h2 id="comparisonTitle">Comparar sem <span>inventar resultado.</span></h2>
+        <p>Quando imagens reais e autorizadas forem fornecidas, este comparador poderá receber o conteúdo. Por enquanto, ele permanece como uma demonstração estrutural sem alegar transformação corporal.</p>
+      </div>
+      <div class="compare-shell" id="compareShell" aria-label="Componente preparado para comparação de imagens reais">
+        <div class="compare-pane compare-pane--before"><span>IMAGEM REAL / A INSERIR</span></div>
+        <div class="compare-pane compare-pane--after"><span>IMAGEM REAL / A INSERIR</span></div>
+        <div class="compare-divider" id="compareDivider"><i></i></div>
+        <input id="compareRange" type="range" min="0" max="100" value="50" aria-label="Controlar comparação">
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolioTitle">
+      <div class="portfolio__title-block">
+        <span class="section-index">05</span>
+        <p class="kicker">PORTFÓLIO / PRESENÇA VISUAL</p>
+        <h2 id="portfolioTitle">Tata também é <span>imagem.</span></h2>
+        <p>Esta área foi preparada para receber fotografias, editoriais, produções e trabalhos reais. Nenhuma empresa contratante ou campanha foi inventada.</p>
+      </div>
+      <div class="portfolio__track" id="portfolioTrack">
+        <article class="portfolio-slot portfolio-slot--tall"><span>EDITORIAL / A INSERIR</span></article>
+        <article class="portfolio-slot"><span>PRODUÇÃO / A INSERIR</span></article>
+        <article class="portfolio-slot portfolio-slot--wide"><span>TRABALHO REAL / A INSERIR</span></article>
+      </div>
+    </section>
+
+    <section class="calculator" id="calculadora" aria-labelledby="calculatorTitle">
+      <div class="calculator__head">
+        <span class="section-index">06</span>
+        <p class="kicker">CALCULADORA / COMERCIAL</p>
+        <h2 id="calculatorTitle">Uma ferramenta pronta para quando houver <span>preço real.</span></h2>
+        <p>Como preços e regras comerciais ainda não foram fornecidos, nenhuma fórmula foi inventada. Assim que os dados reais forem cadastrados, o componente poderá calcular quantidade × preço ou orçamento.</p>
+      </div>
+      <div class="calculator__panel" data-status="waiting">
+        <div><small>STATUS</small><strong>CONFIGURAR_CALCULADORA</strong></div>
+        <p>O componente está preparado, mas permanece bloqueado até existirem dados comerciais reais.</p>
+      </div>
+    </section>
+
+    <section class="testimonials" id="depoimentos" aria-labelledby="testimonialsTitle">
+      <div>
+        <span class="section-index">07</span>
+        <p class="kicker">DEPOIMENTOS</p>
+        <h2 id="testimonialsTitle">Confiança precisa vir de <span>história real.</span></h2>
+      </div>
+      <div class="testimonials__empty">
+        <p>Depoimentos reais poderão ser inseridos aqui quando forem fornecidos.</p>
+        <span>Nenhum nome, avaliação ou resultado foi fabricado.</span>
+      </div>
+    </section>
+
+    <section class="final-decision" id="decidir" aria-labelledby="finalTitle">
+      <div class="final-decision__contour" aria-hidden="true">
+        <svg viewBox="0 0 900 520"><path d="M108 438C87 256 188 76 418 75c228-1 356 162 368 352"/></svg>
+      </div>
+      <div class="final-decision__content">
+        <span class="section-index">08</span>
+        <p class="kicker">DA ESCOLHA PARA A CONVERSA</p>
+        <h2 id="finalTitle">Você já sabe mais sobre o que procura.<br><span>Agora leve isso para a Tata Storys.</span></h2>
+        <p id="contactAvailability">O WhatsApp oficial ainda não foi cadastrado no projeto.</p>
+        <button class="btn btn--primary btn--large" id="whatsappCTA" type="button">Falar com Tata Storys <span>↗</span></button>
+        <div class="social-links" id="socialLinks" aria-label="Redes sociais da Tata Storys"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><strong>TATA STORYS</strong><span>Thamires Santos</span></div>
+    <p>Estrutura digital preparada para catálogo, portfólio, quiz e atendimento.</p>
+    <span id="currentYear"></span>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
