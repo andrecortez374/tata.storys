@@ -3,245 +3,219 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#f5efe9">
-  <meta name="description" content="Tata Storys — uma experiência editorial para conhecer cintas, entender preferências e conversar sobre a melhor opção para você.">
-  <meta property="og:title" content="Tata Storys | Cintas e experiência de escolha">
-  <meta property="og:description" content="Explore o universo Tata Storys, descubra opções e leve suas preferências para uma conversa no WhatsApp.">
+  <meta name="theme-color" content="#f5efeb">
+  <meta name="description" content="tata.storys — modeladoras, cintas, coletes, calcinhas e sutiãs com preços, guia de tamanho e atendimento direto pelo WhatsApp.">
+  <meta property="og:title" content="tata.storys | Modeladoras">
+  <meta property="og:description" content="Escolha sua peça, confira a grade e fale direto com a Tata Storys.">
   <meta property="og:type" content="website">
-  <title>Tata Storys | Cintas e experiência de escolha</title>
+  <title>tata.storys | Modeladoras</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header" id="siteHeader">
-    <a class="brand" href="#inicio" aria-label="Tata Storys — início">
-      <span class="brand__word">TATA</span>
-      <span class="brand__line" aria-hidden="true"></span>
-      <span class="brand__word brand__word--light">STORYS</span>
+  <header class="topbar" id="topbar">
+    <a class="logo" href="#inicio" aria-label="tata.storys — início">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48">
+          <path d="M9 28c8-16 20-19 30-8-8 1-13 5-16 11 5-2 10-1 15 3-8 9-18 10-28 3 4-4 5-7-1-9Z"/>
+          <path d="M23 9c2 11 1 21-4 30"/>
+        </svg>
+      </span>
+      <span class="logo-word">tata<span>.</span>storys</span>
     </a>
-    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#catalogo">Peças</a>
+      <a href="#tamanhos">Tamanhos</a>
+      <a href="#escolha">Sua escolha</a>
+      <a class="nav-cta" href="#contato">WhatsApp</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Abrir menu" aria-expanded="false">
       <span></span><span></span>
     </button>
-    <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
-      <a href="#descobrir">Descobrir</a>
-      <a href="#catalogo">Catálogo</a>
-      <a href="#quiz">Encontrar uma opção</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#decidir">Conversar</a>
-    </nav>
   </header>
 
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+    <a href="#catalogo">Peças</a>
+    <a href="#tamanhos">Tamanhos</a>
+    <a href="#escolha">Sua escolha</a>
+    <a href="#contato">WhatsApp</a>
+  </nav>
+
   <main id="conteudo">
-    <section class="hero" id="inicio" aria-labelledby="heroTitle">
-      <div class="hero__type hero__type--top" aria-hidden="true">TATA</div>
-      <div class="hero__type hero__type--bottom" aria-hidden="true">STORYS</div>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">MODELADORAS / TATA STORYS</p>
+        <h1>Escolher bem muda a experiência <em>antes mesmo de vestir.</em></h1>
+        <p class="hero-lead">Cintas, coletes, calcinhas, sutiãs e modeladores com preço visível, grade organizada e atendimento direto.</p>
 
-      <div class="contour-stage" aria-hidden="true">
-        <svg class="contour-svg" viewBox="0 0 720 980" role="presentation">
-          <path id="heroContour" d="M476 80C358 128 306 232 326 344c17 96 109 127 125 225 17 102-41 166-134 211-69 33-103 76-109 142"/>
-        </svg>
-        <div class="editorial-frame">
-          <div class="editorial-frame__grain"></div>
-          <span>EDITORIAL / PRODUCT EXPERIENCE</span>
-          <strong>FORMA<br>EM<br>MOVIMENTO</strong>
-          <small>Imagem oficial da Tata Storys pode ocupar este enquadramento.</small>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#catalogo">Ver peças <span>↘</span></a>
+          <a class="btn btn-ghost" href="#tamanhos">Descobrir meu tamanho</a>
+        </div>
+
+        <div class="hero-notes" aria-label="Destaques">
+          <span>16 peças no varejo</span>
+          <span>Guia por modelo</span>
+          <span>Atendimento no WhatsApp</span>
         </div>
       </div>
 
-      <div class="hero__content">
-        <p class="kicker">TATA STORYS / CINTAS / ESCOLHA</p>
-        <h1 id="heroTitle">Não é sobre escolher qualquer peça.<br><em>É sobre encontrar a sua.</em></h1>
-        <p class="hero__lead">Conheça o universo Tata Storys, explore as opções disponíveis e leve suas preferências para uma conversa mais clara antes da compra.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#catalogo">Explorar cintas <span>↘</span></a>
-          <a class="btn btn--text" href="#quiz">Encontrar uma opção</a>
-        </div>
-      </div>
+      <figure class="hero-photo">
+        <img src="assets/images/thamires-corrida.webp" alt="Thamires Santos correndo ao ar livre" width="620" height="731" fetchpriority="high">
+        <figcaption>
+          <strong>Thamires Santos</strong>
+          <span>movimento • presença • rotina</span>
+        </figcaption>
+      </figure>
 
-      <div class="hero__meta" aria-hidden="true">
-        <span>01 / DESCOBRIR</span>
-        <span>02 / IDENTIFICAR</span>
-        <span>03 / ESCOLHER</span>
-      </div>
+      <div class="hero-orbit" aria-hidden="true"></div>
     </section>
 
-    <section class="manifesto" id="descobrir" aria-labelledby="manifestoTitle">
-      <div class="manifesto__rail" aria-hidden="true">
-        <span>ESCOLHA</span><i></i><span>PRESENÇA</span><i></i><span>FORMA</span><i></i><span>CURADORIA</span>
-      </div>
-      <div class="manifesto__layout">
-        <div class="section-index">01</div>
+    <section class="brand-strip" aria-label="Categorias">
+      <span>cintas</span><i></i><span>coletes</span><i></i><span>calcinhas</span><i></i><span>sutiãs</span><i></i><span>modeladores</span>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-head split">
         <div>
-          <p class="kicker">ENTRAR NO UNIVERSO TATA</p>
-          <h2 id="manifestoTitle">Uma experiência pensada para <span>ver, entender e decidir.</span></h2>
+          <p class="eyebrow">VAREJO / ESCOLHA DIRETA</p>
+          <h2>O que combina com a sua escolha hoje?</h2>
         </div>
-        <div class="manifesto__copy">
-          <p>O site organiza descoberta, comparação e intenção de compra sem transformar a experiência em uma prateleira infinita de cards.</p>
-          <p>Quando os produtos reais forem cadastrados, cada peça passa a ocupar esta narrativa de forma editorial e clara.</p>
+        <p>Filtre por categoria, compare os valores e chame com o modelo já identificado.</p>
+      </div>
+
+      <div class="catalog-filters" id="catalogFilters" aria-label="Filtrar produtos"></div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+      <div class="catalog-foot">
+        <span>Valores de varejo conforme tabela enviada.</span>
+        <span>Disponibilidade e condição final são confirmadas no atendimento.</span>
+      </div>
+    </section>
+
+    <section class="size-section" id="tamanhos">
+      <div class="section-head">
+        <p class="eyebrow">GUIA REAL DE TAMANHO</p>
+        <h2>Seu tamanho começa pela numeração que você já conhece.</h2>
+        <p>Escolha o modelo e compare com a numeração de roupa indicada na tabela.</p>
+      </div>
+
+      <div class="size-shell">
+        <div class="size-models" id="sizeModels" aria-label="Escolha o modelo"></div>
+
+        <div class="size-main">
+          <div class="size-visual" aria-hidden="true">
+            <div class="size-figure" id="sizeFigure">
+              <svg viewBox="0 0 220 390">
+                <path d="M110 18c-24 0-40 18-42 48-2 26 10 41 1 67-10 29-25 50-22 91 2 33 19 50 22 79 4 35-10 45-4 66 7 24 22 34 45 34s38-10 45-34c6-21-8-31-4-66 3-29 20-46 22-79 3-41-12-62-22-91-9-26 3-41 1-67-2-30-18-48-42-48Z"/>
+              </svg>
+              <span class="measure-band band-waist">cintura</span>
+              <span class="measure-band band-hip">quadril</span>
+            </div>
+            <small>arraste para girar</small>
+          </div>
+
+          <div class="size-table-wrap">
+            <div class="size-title-row">
+              <div>
+                <span id="sizeCategory">Cinta Faixa</span>
+                <h3 id="sizeTitle">16 Barbatanas</h3>
+              </div>
+              <label class="usual-size">
+                <span>Eu costumo vestir</span>
+                <select id="usualSize">
+                  <option value="">Selecione</option>
+                  <option>36</option><option>38</option><option>40</option><option>42</option>
+                  <option>44</option><option>46</option><option>48</option><option>50</option>
+                  <option>52</option><option>54</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="size-table" id="sizeTable" role="table" aria-label="Tabela de tamanhos"></div>
+            <p class="size-result" id="sizeResult">Selecione sua numeração habitual para destacar as faixas correspondentes.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="catalog" id="catalogo" aria-labelledby="catalogTitle">
-      <div class="catalog__sticky">
-        <div class="catalog__intro">
-          <span class="section-index">02</span>
-          <p class="kicker">CATÁLOGO / CURADORIA</p>
-          <h2 id="catalogTitle">Explore por <span>presença</span>, não por excesso.</h2>
-          <p>Os dados reais de modelos, preços, tamanhos, cores, materiais e estoque ainda não foram informados. A estrutura abaixo já está preparada para receber o catálogo oficial.</p>
-          <div id="catalogFilters" class="catalog-filters" aria-label="Filtros do catálogo"></div>
-        </div>
-
-        <div class="catalog__viewer" id="catalogViewer">
-          <div class="product-stage" id="productStage">
-            <div class="product-stage__silhouette" aria-hidden="true">
-              <svg viewBox="0 0 420 620"><path d="M210 44c-52 0-78 41-81 92-4 73 34 99 33 168-1 72-50 105-47 186 2 53 35 88 95 88s93-35 95-88c3-81-46-114-47-186-1-69 37-95 33-168-3-51-29-92-81-92z"/></svg>
-            </div>
-            <div class="product-stage__content" id="productStageContent">
-              <span>CATÁLOGO AINDA NÃO CADASTRADO</span>
-              <h3>Pronto para receber os produtos reais da Tata Storys.</h3>
-              <p>Ao adicionar produtos no arquivo <code>script.js</code>, esta área passa a permitir navegação, seleção, favoritos e mensagens contextualizadas.</p>
-              <a class="btn btn--outline" href="#quiz">Prefiro dizer o que procuro</a>
-            </div>
-          </div>
-          <div class="catalog__thumbs" id="catalogThumbs" aria-live="polite"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="choice-flow" id="quiz" aria-labelledby="quizTitle">
-      <div class="choice-flow__line" aria-hidden="true"></div>
-      <div class="choice-flow__head">
-        <span class="section-index">03</span>
-        <p class="kicker">QUIZ / INTENÇÃO DE COMPRA</p>
-        <h2 id="quizTitle">Conte o que você procura.<br><span>A conversa já começa melhor.</span></h2>
-        <p>Este quiz não promete encontrar “a cinta perfeita” nem faz recomendação médica. Ele apenas organiza suas preferências para o atendimento.</p>
+    <section class="choice-section" id="escolha">
+      <div class="choice-copy">
+        <p class="eyebrow">SE AINDA ESTÁ EM DÚVIDA</p>
+        <h2>Três respostas. Uma conversa muito mais objetiva.</h2>
+        <p>Você diz o que procura, o que prioriza e a numeração que costuma vestir. O WhatsApp já abre com tudo organizado.</p>
       </div>
 
-      <form class="quiz" id="choiceQuiz">
-        <div class="quiz__progress" aria-hidden="true"><span id="quizProgress"></span></div>
-        <div class="quiz__step-meta"><span id="quizStepLabel">ETAPA 1 DE 4</span><strong id="quizPercent">25%</strong></div>
+      <form class="choice-card" id="choiceForm">
+        <div class="choice-progress"><span id="choiceProgress"></span></div>
 
-        <fieldset class="quiz__step is-active" data-step="0">
-          <legend>Que tipo de peça você está procurando?</legend>
-          <div class="quiz__options">
-            <label><input type="radio" name="pieceType" value="Cinta"><span>Cinta</span></label>
-            <label><input type="radio" name="pieceType" value="Ainda não sei"><span>Ainda não sei</span></label>
-            <label><input type="radio" name="pieceType" value="Quero explicar"><span>Quero explicar</span></label>
+        <fieldset class="choice-step is-active" data-step="0">
+          <legend>O que você procura?</legend>
+          <div class="option-grid">
+            <label><input type="radio" name="tipo" value="Cinta"><span>Cinta</span></label>
+            <label><input type="radio" name="tipo" value="Colete"><span>Colete</span></label>
+            <label><input type="radio" name="tipo" value="Calcinha"><span>Calcinha</span></label>
+            <label><input type="radio" name="tipo" value="Sutiã"><span>Sutiã</span></label>
+            <label><input type="radio" name="tipo" value="Short"><span>Short</span></label>
+            <label><input type="radio" name="tipo" value="Ainda não sei"><span>Ainda não sei</span></label>
           </div>
-          <label class="quiz__free"><span>Outro / quero responder com minhas palavras</span><textarea name="pieceTypeCustom" rows="3" placeholder="Escreva do seu jeito."></textarea></label>
         </fieldset>
 
-        <fieldset class="quiz__step" data-step="1" hidden>
-          <legend>Em que contexto você pretende usar a peça?</legend>
-          <div class="quiz__options">
-            <label><input type="checkbox" name="useContext" value="Dia a dia"><span>Dia a dia</span></label>
-            <label><input type="checkbox" name="useContext" value="Ocasião específica"><span>Ocasião específica</span></label>
-            <label><input type="checkbox" name="useContext" value="Produção / look"><span>Produção / look</span></label>
-            <label><input type="checkbox" name="useContext" value="Ainda não sei"><span>Ainda não sei</span></label>
+        <fieldset class="choice-step" data-step="1" hidden>
+          <legend>O que mais pesa na sua escolha?</legend>
+          <div class="option-grid">
+            <label><input type="checkbox" name="prioridade" value="Uso no dia a dia"><span>Dia a dia</span></label>
+            <label><input type="checkbox" name="prioridade" value="Discrição sob a roupa"><span>Discrição</span></label>
+            <label><input type="checkbox" name="prioridade" value="Cobertura"><span>Cobertura</span></label>
+            <label><input type="checkbox" name="prioridade" value="Estilo"><span>Estilo</span></label>
           </div>
-          <label class="quiz__free"><span>Outro / quero responder com minhas palavras</span><textarea name="useContextCustom" rows="3" placeholder="Conte mais sobre onde pretende usar."></textarea></label>
         </fieldset>
 
-        <fieldset class="quiz__step" data-step="2" hidden>
-          <legend>O que mais importa para você na escolha?</legend>
-          <div class="quiz__options">
-            <label><input type="checkbox" name="priority" value="Cobertura"><span>Cobertura</span></label>
-            <label><input type="checkbox" name="priority" value="Discrição sob a roupa"><span>Discrição sob a roupa</span></label>
-            <label><input type="checkbox" name="priority" value="Estilo"><span>Estilo</span></label>
-            <label><input type="checkbox" name="priority" value="Facilidade de uso"><span>Facilidade de uso</span></label>
+        <fieldset class="choice-step" data-step="2" hidden>
+          <legend>Qual numeração você costuma vestir?</legend>
+          <div class="final-fields">
+            <select name="numeracao" aria-label="Numeração habitual">
+              <option value="">Prefiro confirmar no atendimento</option>
+              <option>36</option><option>38</option><option>40</option><option>42</option>
+              <option>44</option><option>46</option><option>48</option><option>50</option>
+              <option>52</option><option>54</option>
+            </select>
+            <textarea name="observacao" rows="3" placeholder="Quer acrescentar algo?"></textarea>
           </div>
-          <label class="quiz__free"><span>Outro / quero responder com minhas palavras</span><textarea name="priorityCustom" rows="3" placeholder="O que é prioridade para você?"></textarea></label>
         </fieldset>
 
-        <fieldset class="quiz__step" data-step="3" hidden>
-          <legend>Quer acrescentar algum detalhe antes de conversar?</legend>
-          <label class="quiz__free quiz__free--large"><textarea name="notes" rows="6" placeholder="Escreva qualquer detalhe que possa ajudar no atendimento."></textarea></label>
-          <p class="quiz__notice">As respostas servem apenas para organizar sua intenção de compra. Nenhuma recomendação médica ou técnica é gerada automaticamente.</p>
-        </fieldset>
-
-        <div class="quiz__actions">
-          <button class="btn btn--text" id="quizBack" type="button" disabled>← Voltar</button>
-          <button class="btn btn--primary" id="quizNext" type="button">Continuar →</button>
+        <div class="choice-actions">
+          <button class="btn btn-ghost" id="choiceBack" type="button" disabled>← Voltar</button>
+          <button class="btn btn-primary" id="choiceNext" type="button">Continuar →</button>
         </div>
       </form>
     </section>
 
-    <section class="comparison" id="antes-depois" aria-labelledby="comparisonTitle">
-      <div class="comparison__copy">
-        <span class="section-index">04</span>
-        <p class="kicker">ANTES / DEPOIS / ESTRUTURA PREPARADA</p>
-        <h2 id="comparisonTitle">Comparar sem <span>inventar resultado.</span></h2>
-        <p>Quando imagens reais e autorizadas forem fornecidas, este comparador poderá receber o conteúdo. Por enquanto, ele permanece como uma demonstração estrutural sem alegar transformação corporal.</p>
+    <section class="final-section" id="contato">
+      <div class="final-symbol" aria-hidden="true">
+        <svg viewBox="0 0 48 48">
+          <path d="M9 28c8-16 20-19 30-8-8 1-13 5-16 11 5-2 10-1 15 3-8 9-18 10-28 3 4-4 5-7-1-9Z"/>
+          <path d="M23 9c2 11 1 21-4 30"/>
+        </svg>
       </div>
-      <div class="compare-shell" id="compareShell" aria-label="Componente preparado para comparação de imagens reais">
-        <div class="compare-pane compare-pane--before"><span>IMAGEM REAL / A INSERIR</span></div>
-        <div class="compare-pane compare-pane--after"><span>IMAGEM REAL / A INSERIR</span></div>
-        <div class="compare-divider" id="compareDivider"><i></i></div>
-        <input id="compareRange" type="range" min="0" max="100" value="50" aria-label="Controlar comparação">
-      </div>
-    </section>
-
-    <section class="portfolio" id="portfolio" aria-labelledby="portfolioTitle">
-      <div class="portfolio__title-block">
-        <span class="section-index">05</span>
-        <p class="kicker">PORTFÓLIO / PRESENÇA VISUAL</p>
-        <h2 id="portfolioTitle">Tata também é <span>imagem.</span></h2>
-        <p>Esta área foi preparada para receber fotografias, editoriais, produções e trabalhos reais. Nenhuma empresa contratante ou campanha foi inventada.</p>
-      </div>
-      <div class="portfolio__track" id="portfolioTrack">
-        <article class="portfolio-slot portfolio-slot--tall"><span>EDITORIAL / A INSERIR</span></article>
-        <article class="portfolio-slot"><span>PRODUÇÃO / A INSERIR</span></article>
-        <article class="portfolio-slot portfolio-slot--wide"><span>TRABALHO REAL / A INSERIR</span></article>
-      </div>
-    </section>
-
-    <section class="calculator" id="calculadora" aria-labelledby="calculatorTitle">
-      <div class="calculator__head">
-        <span class="section-index">06</span>
-        <p class="kicker">CALCULADORA / COMERCIAL</p>
-        <h2 id="calculatorTitle">Uma ferramenta pronta para quando houver <span>preço real.</span></h2>
-        <p>Como preços e regras comerciais ainda não foram fornecidos, nenhuma fórmula foi inventada. Assim que os dados reais forem cadastrados, o componente poderá calcular quantidade × preço ou orçamento.</p>
-      </div>
-      <div class="calculator__panel" data-status="waiting">
-        <div><small>STATUS</small><strong>CONFIGURAR_CALCULADORA</strong></div>
-        <p>O componente está preparado, mas permanece bloqueado até existirem dados comerciais reais.</p>
-      </div>
-    </section>
-
-    <section class="testimonials" id="depoimentos" aria-labelledby="testimonialsTitle">
-      <div>
-        <span class="section-index">07</span>
-        <p class="kicker">DEPOIMENTOS</p>
-        <h2 id="testimonialsTitle">Confiança precisa vir de <span>história real.</span></h2>
-      </div>
-      <div class="testimonials__empty">
-        <p>Depoimentos reais poderão ser inseridos aqui quando forem fornecidos.</p>
-        <span>Nenhum nome, avaliação ou resultado foi fabricado.</span>
-      </div>
-    </section>
-
-    <section class="final-decision" id="decidir" aria-labelledby="finalTitle">
-      <div class="final-decision__contour" aria-hidden="true">
-        <svg viewBox="0 0 900 520"><path d="M108 438C87 256 188 76 418 75c228-1 356 162 368 352"/></svg>
-      </div>
-      <div class="final-decision__content">
-        <span class="section-index">08</span>
-        <p class="kicker">DA ESCOLHA PARA A CONVERSA</p>
-        <h2 id="finalTitle">Você já sabe mais sobre o que procura.<br><span>Agora leve isso para a Tata Storys.</span></h2>
-        <p id="contactAvailability">O WhatsApp oficial ainda não foi cadastrado no projeto.</p>
-        <button class="btn btn--primary btn--large" id="whatsappCTA" type="button">Falar com Tata Storys <span>↗</span></button>
-        <div class="social-links" id="socialLinks" aria-label="Redes sociais da Tata Storys"></div>
-      </div>
+      <p class="eyebrow">TATA.STORYS</p>
+      <h2>Chegue na conversa com a peça já escolhida.</h2>
+      <p>Preço, modelo e tamanho na mesma direção. O próximo passo é só confirmar disponibilidade.</p>
+      <button class="btn btn-primary btn-large" id="mainWhatsapp" type="button">Falar com Tata Storys <span>↗</span></button>
+      <span class="phone-note">WhatsApp: (79) 99809-2301</span>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div><strong>TATA STORYS</strong><span>Thamires Santos</span></div>
-    <p>Estrutura digital preparada para catálogo, portfólio, quiz e atendimento.</p>
-    <span id="currentYear"></span>
+  <footer class="footer">
+    <a class="logo footer-logo" href="#inicio">
+      <span class="logo-word">tata<span>.</span>storys</span>
+    </a>
+    <p>Modeladoras • varejo • atendimento direto</p>
+    <span id="year"></span>
   </footer>
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
